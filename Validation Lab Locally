@@ -1,0 +1,4 @@
+
+docker build -t hardened-llm-gateway .
+docker run -d -p 8080:8080 --name llm-sec-test hardened-llm-gateway
+
