@@ -1,0 +1,19 @@
+# 1. Initialize the local repository
+git init
+
+# 2. Add all core application files
+git add app.py Dockerfile requirements.txt
+
+# 3. Create the GitHub Actions workflow directory and stage it
+mkdir -p .github/workflows
+mv deploy.yml .github/workflows/deploy.yml
+git add .github/workflows/deploy.yml
+
+# 4. Commit the initial baseline code
+git commit -m "feat: initial release of hardened LLM gateway with input validation and DLP"
+
+# 5. Link to your remote GitHub repository and push
+# (Replace with your actual GitHub username and repository name)
+git remote add origin https://github.com
+git branch -M main
+git push -u origin main
