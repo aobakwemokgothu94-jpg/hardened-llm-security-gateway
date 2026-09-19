@@ -1,0 +1,6 @@
+
+# Build the image locally
+docker build -t hardened-llm-gateway .
+
+# Spin up the container
+docker run -d -p 8080:8080 --name ai-firewall hardened-llm-gateway
