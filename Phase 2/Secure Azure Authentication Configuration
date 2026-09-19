@@ -1,0 +1,5 @@
+az ad sp create-for-rbac \
+  --name "github-actions-llm-gateway-sp" \
+  --role contributor \
+  --scopes /subscriptions/YOUR_AZURE_SUBSCRIPTION_ID \
+  --sdk-auth
